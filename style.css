@@ -1,5 +1,5 @@
 body {
-    background-color: #E5D9F2;
+    background-color: #25282A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,45 +10,59 @@ body {
 .container {
     width: 400px;
     margin: auto;
-    background-color: #F5EFFF;
+    background-color: #ECECEA;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .title {
+    width: 100%;
+    font-size: 15px;
     text-align: center;
+}
+.divider {
+    height: 1px;
+    background-color: rgb(60, 60, 60);
+    margin: 5px 0;
 }
 
 .subtitle {
-    text-align: center;
-    color: #666;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 60px;
+    text-align: left;
+    font-family: "Barlow Condensed", Impact, sans-serif;
+    color: #202528;
+}
+.red-letter {
+    color: #B83A3A;
 }
 
 .addButton {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #A78BFA;
-    color: white;
+    background-color:white;
+    color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 .addButton:hover {
-    background-color: #7371FC;
+    background-color: #B83A3A;
 }
 
 .inputField {
     display: flex;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     width: 64vh;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px dotted #000000;
+    border-radius: 0px;
 }
 
 .taskList {
@@ -70,22 +84,12 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.taskList li button {
-    background-color: #ff4d4d;
-    color: white;
+.taskList li button{
     border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 12px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    background-color: transparent;
+    font-size: 18px;
 }
-
 .taskList li button:hover {
-    background-color: #e60000;
-    transform: scale(1.1);
+    color: #B83A3A;
+    cursor: pointer;
 }

@@ -7,7 +7,7 @@ addButton.addEventListener('click', function() {
         const li = document.createElement('li');
         li.textContent = taskText;
         const deleteBtn = document.createElement('button');
-        deleteBtn.textContent = "🗑️";
+        deleteBtn.textContent = "✖";
         deleteBtn.addEventListener('click', function() {
             li.remove();
         });
